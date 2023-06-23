@@ -1,0 +1,100 @@
+body {
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  /* background-color: #f7efe5; */
+  background-image: url('./VJE4.gif') ;
+  background-repeat: no-repeat;
+  /* background-color :black; */
+  background-size: 85rem 50rem;
+}
+
+/* Chat Window */
+#chat-window {
+  width: 500px;
+  margin: 0 auto;
+  background-color:darkblue;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+#chat-messages {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  height: calc(100vh - 200px);
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+}
+
+#chat-form {
+  display: flex;
+  align-items: center;
+}
+
+#chat-input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(25, 195, 125);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* Bot message */
+.bot-message {
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  background-color: black; /* different light color */
+  text-align: justify; /* keep it right-aligned */
+  padding: 15px; /* added padding */
+  margin-top: 10px; /* added margin-top to create a gap */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* User message */
+.user-message {
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  background-color: black; /* light color */
+  text-align: left; /* changed text align to left */
+  padding: 15px; /* added padding */
+  display: flex;
+  align-items: center;
+}
+
+.user-message img,
+.bot-message img {
+  width: 40px; /* adjust the width of the icon */
+  height: 40px; /* adjust the height of the icon */
+  margin-right: 20px; /* add some margin to separate the icon from the message */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+  #chat-window {
+    width: 90%;
+  }
+}
+.main-title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 0.5rem;
+  color: #fffbf5;
+  /* font-style: italic; */
+}
